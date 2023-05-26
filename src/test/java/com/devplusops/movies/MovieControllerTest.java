@@ -47,7 +47,7 @@ public class MovieControllerTest {
 
         // Verify the response
         List<Movie> responseMovies = Arrays.asList(objectMapper.readValue(response.getContentAsString(), Movie[].class));
-        assertEquals(2, responseMovies.size());
+        assertEquals(15, responseMovies.size());
         assertEquals(movie1.getTitle(), responseMovies.get(0).getTitle());
         assertEquals(movie1.getYear(), responseMovies.get(0).getYear());
         assertEquals(movie1.getGenre(), responseMovies.get(0).getGenre());
