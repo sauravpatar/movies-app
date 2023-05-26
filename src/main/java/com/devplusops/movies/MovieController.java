@@ -17,6 +17,12 @@ import java.util.List;
 public class MovieController {
     private List<Movie> movies = new ArrayList<>();
 
+    @GetMapping
+    @RequestMapping("/hello")
+    public String getHello() {
+        return "Hello, My App !";
+    }
+
 
     @GetMapping
     public List<Movie> getAllMovies() {
