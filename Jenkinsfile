@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "This is a test build"
+                echo "This is a build"
                 sh './mvnw clean package'
             }
         }
