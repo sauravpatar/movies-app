@@ -6,11 +6,12 @@ pipeline {
             label 'docker'
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
-        options {
+    }
+
+    options {
             ansiColor('xterm')
             disableConcurrentBuilds()
             durabilityHint("PERFORMANCE_OPTIMIZED")
-        }
     }
     
     stages {
