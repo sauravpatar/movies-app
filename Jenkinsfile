@@ -23,6 +23,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                echo "This is a build for java"
                 sh './mvnw clean package'
             }
         }
