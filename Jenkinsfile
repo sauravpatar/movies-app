@@ -17,6 +17,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                sh 'ls -ltr'
                 sh './mvnw test'
             }
         }
