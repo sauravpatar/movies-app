@@ -20,7 +20,7 @@ public class MovieController {
     @GetMapping
     @RequestMapping("/hello")
     public String getHello() {
-        return "Hello, My App Testing !";
+        return "Hello, My App Testing All !";
     }
 
 
