@@ -42,7 +42,7 @@ public class Movie {
     public String toString() {
         return "Movie{" +
                 "title='" + title + '\'' +
-                ", now year=" + year +
+                ", year=" + year +
                 ", genre='" + genre + '\'' +
                 '}';
     }
